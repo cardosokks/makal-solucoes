@@ -680,7 +680,7 @@ body {
     font-size: 1rem;
     transition: var(--transition);
     background-color: #ffffff;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .contact-form input:focus,
