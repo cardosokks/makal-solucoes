@@ -328,18 +328,18 @@
                     </div>
                 </div>
 
-                <form class="contact-form" id="contactForm">
+                <form class="contact-form" name="contact" method="POST" netlify>
                     <div class="form-group">
-                        <input type="text" placeholder="Seu Nome" required>
+                        <input type="text" name="name" placeholder="Seu Nome" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Seu Email" required>
+                        <input type="email" name="email" placeholder="Seu Email" required>
                     </div>
                     <div class="form-group">
-                        <input type="text" placeholder="Sua Empresa">
+                        <input type="text" name="company" placeholder="Sua Empresa">
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
+                        <textarea name="message" placeholder="Sua Mensagem" rows="5" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
                 </form>
