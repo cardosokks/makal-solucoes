@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makal Soluções - Agentes de IA para WhatsApp</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navegação -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <i class="fas fa-robot"></i>
+                    <span>Makal Soluções</span>
+                </div>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link">Início</a></li>
+                    <li><a href="#features" class="nav-link">Recursos</a></li>
+                    <li><a href="#pricing" class="nav-link">Preços</a></li>
+                    <li><a href="#cases" class="nav-link">Casos de Sucesso</a></li>
+                    <li><a href="#contact" class="nav-link">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Automatize suas Vendas com Agentes de IA</h1>
+                <p class="hero-subtitle">Implemente assistentes inteligentes no WhatsApp para atender clientes 24/7 e aumentar suas conversões</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToContact()">Começar Agora</button>
+                    <button class="btn btn-secondary">Ver Demo</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <div class="chat-header">
+                            <span class="chat-title">Assistente IA</span>
+                            <span class="online-status">Online</span>
+                        </div>
+                        <div class="chat-messages">
+                            <div class="message bot-message">
+                                <span>Olá! Como posso ajudá-lo?</span>
+                            </div>
+                            <div class="message user-message">
+                                <span>Quero saber sobre seus produtos</span>
+                            </div>
+                            <div class="message bot-message">
+                                <span>Claro! Temos 3 planos principais...</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recursos -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Por que Escolher Makal?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>IA Inteligente</h3>
+                    <p>Algoritmos avançados que aprendem com cada interação para melhorar a qualidade das respostas</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Atendimento 24/7</h3>
+                    <p>Seus clientes recebem respostas instantâneas mesmo fora do horário comercial</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Aumente Vendas</h3>
+                    <p>Qualifique leads automático e agende reuniões com taxas de conversão até 40% maiores</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Segurança Garantida</h3>
+                    <p>Criptografia de ponta a ponta e conformidade com LGPD para proteger seus dados</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-sliders-h"></i>
+                    </div>
+                    <h3>Customizável</h3>
+                    <p>Configure o tom, personalidade e fluxos do assistente de acordo com sua marca</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>Integração Fácil</h3>
+                    <p>Conecte com seus sistemas em poucos minutos através de nossas APIs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como Funciona -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">Como Funciona</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Cadastro Simples</h3>
+                    <p>Crie sua conta em minutos e configure seu primeiro assistente</p>
+                </div>
+                <div class="step-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Treine a IA</h3>
+                    <p>Defina respostas, fluxos e integrações com seu CRM</p>
+                </div>
+                <div class="step-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Publique</h3>
+                    <p>Seu assistente já está operacional e pronto para vender</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preços -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2 class="section-title">Planos e Preços</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Starter</h3>
+                        <p class="price">R$ <span>199</span><span class="period">/mês</span></p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> 1 Assistente IA</li>
+                        <li><i class="fas fa-check"></i> Até 1.000 mensagens/mês</li>
+                        <li><i class="fas fa-check"></i> Suporte por email</li>
+                        <li><i class="fas fa-check"></i> Dashboard básico</li>
+                        <li class="unavailable"><i class="fas fa-times"></i> Integrações avançadas</li>
+                    </ul>
+                    <button class="btn btn-outline">Começar</button>
+                </div>
+
+                <div class="pricing-card featured">
+                    <div class="popular-badge">MAIS POPULAR</div>
+                    <div class="pricing-header">
+                        <h3>Professional</h3>
+                        <p class="price">R$ <span>599</span><span class="period">/mês</span></p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> 5 Assistentes IA</li>
+                        <li><i class="fas fa-check"></i> Até 10.000 mensagens/mês</li>
+                        <li><i class="fas fa-check"></i> Suporte por WhatsApp</li>
+                        <li><i class="fas fa-check"></i> Analytics avançado</li>
+                        <li><i class="fas fa-check"></i> 2 Integrações</li>
+                    </ul>
+                    <button class="btn btn-primary">Começar</button>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Enterprise</h3>
+                        <p class="price">Customizado</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Assistentes ilimitados</li>
+                        <li><i class="fas fa-check"></i> Mensagens ilimitadas</li>
+                        <li><i class="fas fa-check"></i> Suporte 24/7 dedicado</li>
+                        <li><i class="fas fa-check"></i> Integrações customizadas</li>
+                        <li><i class="fas fa-check"></i> Consultoria estratégica</li>
+                    </ul>
+                    <button class="btn btn-outline">Contatar Vendas</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Casos de Sucesso -->
+    <section class="cases" id="cases">
+        <div class="container">
+            <h2 class="section-title">Casos de Sucesso</h2>
+            <div class="cases-grid">
+                <div class="case-card">
+                    <div class="case-header">
+                        <h3>E-commerce XYZ</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="case-description">"Aumentamos nossas vendas em 35% nos primeiros 3 meses. O assistente de IA reduz nosso tempo de resposta de horas para segundos."</p>
+                    <div class="case-stats">
+                        <div class="stat">
+                            <strong>+35%</strong>
+                            <span>Aumento de vendas</span>
+                        </div>
+                        <div class="stat">
+                            <strong>5h→10s</strong>
+                            <span>Tempo de resposta</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-card">
+                    <div class="case-header">
+                        <h3>Agência de Viagens</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="case-description">"A IA qualifica 80% dos leads automaticamente. Nosso time agora foca apenas nos prospects qualificados, aumentando a produtividade."</p>
+                    <div class="case-stats">
+                        <div class="stat">
+                            <strong>80%</strong>
+                            <span>Leads qualificados</span>
+                        </div>
+                        <div class="stat">
+                            <strong>-60%</strong>
+                            <span>Carga manual</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-card">
+                    <div class="case-header">
+                        <h3>Consultoria ABC</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="case-description">"Agora atendemos clientes 24/7. A IA criou um novo canal de vendas que funciona mesmo quando não estamos online."</p>
+                    <div class="case-stats">
+                        <div class="stat">
+                            <strong>24/7</strong>
+                            <span>Atendimento contínuo</span>
+                        </div>
+                        <div class="stat">
+                            <strong>+40%</strong>
+                            <span>Novos leads</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Pronto para revolucionar seu atendimento?</h2>
+            <p>Comece seu teste gratuito agora. Sem cartão de crédito necessário.</p>
+            <button class="btn btn-primary btn-large" onclick="scrollToContact()">Comece o Teste Grátis</button>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Vamos conversar!</h3>
+                    <p>Tem dúvidas? Nossa equipe está pronta para ajudar.</p>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:contato@makal.com">contato@makal.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <a href="https://wa.me/5511999999999" target="_blank">(11) 99999-9999</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Endereço</h4>
+                            <p>São Paulo, SP - Brasil</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Seu Nome" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Seu Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Sua Empresa">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Makal Soluções</h4>
+                    <p>Agentes de IA para WhatsApp que transformam seu negócio</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#features">Recursos</a></li>
+                        <li><a href="#pricing">Preços</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Termos de Serviço</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">LGPD</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Makal Soluções. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
